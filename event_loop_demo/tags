@@ -1,0 +1,90 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	Makefile	/^CC  = gcc$/;"	m
+CPP	Makefile	/^CPP = g++$/;"	m
+DEBUG	ril_event.cpp	75;"	d	file:
+LOG_H_	Log.h	2;"	d
+LOG_TAG	ril_event.cpp	18;"	d	file:
+MAX_FD_EVENTS	ril_event.h	24;"	d
+MUTEX_ACQUIRE	ril_event.cpp	32;"	d	file:
+MUTEX_DESTROY	ril_event.cpp	35;"	d	file:
+MUTEX_INIT	ril_event.cpp	34;"	d	file:
+MUTEX_RELEASE	ril_event.cpp	33;"	d	file:
+OBJECTS	Makefile	/^OBJECTS = $(patsubst %.cpp,%.o, $(wildcard *.cpp))$/;"	m
+RIL_register	ril.cpp	/^RIL_register () {$/;"	f
+RIL_startEventLoop	ril.cpp	/^RIL_startEventLoop(void) {$/;"	f
+RLOGE	Log.h	7;"	d
+RLOGE	Log.h	9;"	d
+TARGET	Makefile	/^TARGET = event_test $/;"	m
+TIMEVAL_WAKE_TIMEOUT	ril.cpp	/^static const struct timeval TIMEVAL_WAKE_TIMEOUT = {1,0};$/;"	v	typeref:struct:timeval	file:
+addToList	ril_event.cpp	/^static void addToList(struct ril_event * ev, struct ril_event * list)$/;"	f	file:
+calcNextTimeout	ril_event.cpp	/^static int calcNextTimeout(struct timeval * tv)$/;"	f	file:
+dlog	ril_event.cpp	78;"	d	file:
+dlog	ril_event.cpp	92;"	d	file:
+dump_event	ril_event.cpp	/^static void dump_event(struct ril_event * ev)$/;"	f	file:
+dump_event	ril_event.cpp	93;"	d	file:
+eventLoop	ril.cpp	/^eventLoop(void *param) {$/;"	f	file:
+fd	ril_event.h	/^    int fd;                  \/\/事件相关设备句柄。最重要的就是RILJ与RILC之间的Socket文件句柄$/;"	m	struct:ril_event
+firePending	ril_event.cpp	/^static void firePending()$/;"	f	file:
+func	ril_event.h	/^    ril_event_cb func;       \/\/当前Event的处理函数$/;"	m	struct:ril_event
+getNow	ril_event.cpp	/^static void getNow(struct timeval * tv)$/;"	f	file:
+index	ril_event.h	/^    int index;$/;"	m	struct:ril_event
+init_list	ril_event.cpp	/^static void init_list(struct ril_event * list)$/;"	f	file:
+listMutex	ril_event.cpp	/^static pthread_mutex_t listMutex;$/;"	v	file:
+listenCallback	ril.cpp	/^static void listenCallback (int fd, short flags, void *param) {$/;"	f	file:
+main	main.cpp	/^int main(int argc, char *argv[])$/;"	f
+next	ril_event.h	/^    struct ril_event *next;$/;"	m	struct:ril_event	typeref:struct:ril_event::ril_event
+nfds	ril_event.cpp	/^static int nfds = 0;$/;"	v	file:
+param	ril_event.h	/^    void *param;             \/\/调用当前Event处理函数时的参数$/;"	m	struct:ril_event
+pending_list	ril_event.cpp	/^static struct ril_event pending_list;$/;"	v	typeref:struct:ril_event	file:
+persist	ril_event.h	/^    bool persist;            \/\/说明当前的Event需要保持，不能从watch_table中删除$/;"	m	struct:ril_event
+prev	ril_event.h	/^    struct ril_event *prev;$/;"	m	struct:ril_event	typeref:struct:ril_event::ril_event
+printReadies	ril_event.cpp	/^static void printReadies(fd_set * rfds)$/;"	f	file:
+printReadies	ril_event.cpp	366;"	d	file:
+processReadReadies	ril_event.cpp	/^static void processReadReadies(fd_set * rfds, int n)$/;"	f	file:
+processTimeouts	ril_event.cpp	/^static void processTimeouts()$/;"	f	file:
+processWakeupCallback	ril.cpp	/^static void processWakeupCallback(int fd, short flags, void *param) {$/;"	f	file:
+readFds	ril_event.cpp	/^static fd_set readFds;$/;"	v	file:
+removeFromList	ril_event.cpp	/^static void removeFromList(struct ril_event * ev)$/;"	f	file:
+removeWatch	ril_event.cpp	/^static void removeWatch(struct ril_event * ev, int index)$/;"	f	file:
+rilEventAddWakeup	ril.cpp	/^static void rilEventAddWakeup(struct ril_event *ev) {$/;"	f	file:
+ril_event	ril_event.h	/^struct ril_event {$/;"	s
+ril_event_add	ril_event.cpp	/^void ril_event_add(struct ril_event * ev)$/;"	f
+ril_event_cb	ril_event.h	/^typedef void (*ril_event_cb)(int fd, short events, void *userdata);$/;"	t
+ril_event_del	ril_event.cpp	/^void ril_event_del(struct ril_event * ev)$/;"	f
+ril_event_init	ril_event.cpp	/^void ril_event_init()$/;"	f
+ril_event_loop	ril_event.cpp	/^void ril_event_loop()$/;"	f
+ril_event_set	ril_event.cpp	/^void ril_event_set(struct ril_event * ev, int fd, bool persist, ril_event_cb func, void * param)$/;"	f
+ril_timer_add	ril_event.cpp	/^void ril_timer_add(struct ril_event * ev, struct timeval * tv)$/;"	f
+s_commands_event	ril.cpp	/^static struct ril_event s_commands_event;$/;"	v	typeref:struct:ril_event	file:
+s_debug_event	ril.cpp	/^static struct ril_event s_debug_event;$/;"	v	typeref:struct:ril_event	file:
+s_dispatchCond	ril.cpp	/^static pthread_cond_t s_dispatchCond = PTHREAD_COND_INITIALIZER;$/;"	v	file:
+s_dispatchMutex	ril.cpp	/^static pthread_mutex_t s_dispatchMutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+s_fdCommand	ril.cpp	/^static int s_fdCommand = -1;$/;"	v	file:
+s_fdDebug	ril.cpp	/^static int s_fdDebug = -1;$/;"	v	file:
+s_fdListen	main.cpp	/^static int s_fdListen = -1;$/;"	v	file:
+s_fdListen	ril.cpp	/^static int s_fdListen = -1;$/;"	v	file:
+s_fdWakeupRead	ril.cpp	/^static int s_fdWakeupRead;$/;"	v	file:
+s_fdWakeupWrite	ril.cpp	/^static int s_fdWakeupWrite;$/;"	v	file:
+s_listen_event	main.cpp	/^static struct ril_event s_listen_event;$/;"	v	typeref:struct:ril_event	file:
+s_listen_event	ril.cpp	/^static struct ril_event s_listen_event;$/;"	v	typeref:struct:ril_event	file:
+s_pendingRequestsMutex	ril.cpp	/^static pthread_mutex_t s_pendingRequestsMutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+s_started	ril.cpp	/^static int s_started = 0;$/;"	v	file:
+s_startupCond	ril.cpp	/^static pthread_cond_t s_startupCond = PTHREAD_COND_INITIALIZER;$/;"	v	file:
+s_startupMutex	ril.cpp	/^static pthread_mutex_t s_startupMutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+s_tid_dispatch	ril.cpp	/^static pthread_t s_tid_dispatch;$/;"	v	file:
+s_tid_reader	ril.cpp	/^static pthread_t s_tid_reader;$/;"	v	file:
+s_wake_timeout_event	ril.cpp	/^static struct ril_event s_wake_timeout_event;$/;"	v	typeref:struct:ril_event	file:
+s_wakeupfd_event	ril.cpp	/^static struct ril_event s_wakeupfd_event;$/;"	v	typeref:struct:ril_event	file:
+s_writeMutex	ril.cpp	/^static pthread_mutex_t s_writeMutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+timeout	ril_event.h	/^    struct timeval timeout;$/;"	m	struct:ril_event	typeref:struct:ril_event::timeval
+timer_list	ril_event.cpp	/^static struct ril_event timer_list;$/;"	v	typeref:struct:ril_event	file:
+timeradd	ril_event.cpp	38;"	d	file:
+timercmp	ril_event.cpp	50;"	d	file:
+timersub	ril_event.cpp	57;"	d	file:
+triggerEvLoop	ril.cpp	/^static void triggerEvLoop() {$/;"	f	file:
+watch_table	ril_event.cpp	/^static struct ril_event * watch_table[MAX_FD_EVENTS];$/;"	v	typeref:struct:ril_event	file:
