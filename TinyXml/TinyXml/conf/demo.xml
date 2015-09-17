@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<MyApp>
+    <!-- Setting for MyApp -->
+    <Messages>
+        <Farewell>Thank you for using</Farewell>
+        <Farewell2>Thank you for using 2</Farewell2>
+        <Welcome>Wecome Tiny XML</Welcome>
+        <Welcome2>Wecome Tiny XML 2</Welcome2>
+    </Messages>
+    <Windows>
+        <Window name="InitWindow" x="10" y="10" w="200" h="200" />
+        <Window name="SecondWindow" x="10" y="10" w="200" h="200" />
+    </Windows>
+    <Connection ip="192.168.1.1" timeout="125.321" />
+</MyApp>

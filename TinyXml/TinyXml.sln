@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TinyXml", "TinyXml\TinyXml.vcxproj", "{53D48DCD-5E13-43AF-8F88-C0D562B58049}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libIconv", "libIconv\libIconv.vcxproj", "{88FF38A5-9232-42C6-A287-CED2A36FE3D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53D48DCD-5E13-43AF-8F88-C0D562B58049}.Debug|Win32.ActiveCfg = Debug|Win32
+		{53D48DCD-5E13-43AF-8F88-C0D562B58049}.Debug|Win32.Build.0 = Debug|Win32
+		{53D48DCD-5E13-43AF-8F88-C0D562B58049}.Release|Win32.ActiveCfg = Release|Win32
+		{53D48DCD-5E13-43AF-8F88-C0D562B58049}.Release|Win32.Build.0 = Release|Win32
+		{88FF38A5-9232-42C6-A287-CED2A36FE3D8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{88FF38A5-9232-42C6-A287-CED2A36FE3D8}.Debug|Win32.Build.0 = Debug|Win32
+		{88FF38A5-9232-42C6-A287-CED2A36FE3D8}.Release|Win32.ActiveCfg = Release|Win32
+		{88FF38A5-9232-42C6-A287-CED2A36FE3D8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
